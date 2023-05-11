@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <a
+      href="#"
+      class="createNewBankLink js-open-modal"
+      data-modal="createNewBank"
+      >Create new Bank</a
+    >
+
+    <div class="js-modal modal" data-modal="createNewBank">
+      <button class="close-btn js-close-modal" type="button" data-modal="close">
+        <svg class="modal-close-btn" width="15" height="15">
+          <!-- ! хрестик не відображається -->
+          <use href="./img/icons.svg#modal-close"></use>
+        </svg>
+      </button>
+
+      <h2 class="modal-title">Add new bank</h2>
+
+      <form class="form" autocomplete="off">
+        <label for="bankName">Bank name</label>
+        <input type="text" name="bankName" />
+        <label for="interestRate">Bank name</label>
+        <input type="number" name="Interest rate" />
+        <label for="maxLoan">Max loan</label>
+        <input type="number" name="maxLoan" />
+        <label for="minPayment">Min payment</label>
+        <input type="number" name="minPayment" />
+        <label for="loanTerm">Loan term</label>
+        <input type="number" name="loanTerm" />
+        <button class="button" type="submit">Add bank</button>
+      </form>
+    </div>
+
+    <div class="js-modal-overlay overlay"></div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    ;
+
+    <script src="js/script.js" type="module"></script>
+  </body>
+</html>
