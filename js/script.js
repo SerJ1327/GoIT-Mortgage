@@ -17,7 +17,7 @@ const form = document.querySelector(".form");
 form.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {
-  event.preventDefault();
+  // event.preventDefault();
 
   const {
     elements: { bankName, interestRate, maxLoan, minPayment, loanTerm },
@@ -29,8 +29,5 @@ function handleSubmit(event) {
     alert("Такий банк вже додано!");
   } else {
     //   ! потрібно додати генерування id + додати в масив банків
-
-    $(this).parent(".js-modal").removeClass("is-show");
-    $(".js-modal-overlay").removeClass("is-show");
   }
 }
